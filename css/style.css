@@ -54,7 +54,7 @@ a:hover{
 .left_side{
     margin-top: 3rem;
     grid-row: 2/3;
-    border: 2px solid black;
+    /*border: 2px solid black;*/
     padding: 34px 59px;
 
 }
@@ -75,7 +75,7 @@ a:hover{
  }
 
 .right_side{
-    border:2px solid black;
+   /* border:2px solid black;*/
     margin-top: 3rem;
     display: flex;
     flex-direction: column;
