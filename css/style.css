@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: sans-serif;
+}
+html{
+   
+    
+}
+header {
+    width: 100%;
+  min-height: 40px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main{
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    /* grid-template-rows: 100vw 45%; */
+    grid-gap: 20px;
+    background:linear-gradient(45deg, #a700ff ,#4d19db);
+}
+header{
+    grid-column:1/-1;
+
+}
+
+header ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+   margin-top: .5rem;
+   
+}
+
+header li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 400;
+}
+a:hover{
+    color: wheat;
+}
+.left_side , .right_side{
+    margin: 3px;
+}
+.left_side{
+    margin-top: 3rem;
+    grid-row: 2/3;
+    border: 2px solid black;
+    padding: 34px 59px;
+
+}
+.left_side img{
+    width: 25rem;
+    box-shadow:         7px 7px 5px 0px rgba(130, 130, 130, 0.73);
+  
+}
+.right_side img{
+    width: 50%;
+    margin-top: 1rem;
+     /* margin: 22px 105px; */
+    border-radius: 50%;
+    display: block;
+     margin: 1px auto; /* //for center image  */
+    text-align: center;
+    
+ }
+
+.right_side{
+    border:2px solid black;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;justify-items: center;
+
+     /* align-items: center;
+    justify-content: center;  */
+    /* */
+}
+.intro_content{
+    text-align: center;
+    line-height: 2em;
+}
+span{
+    font-weight: bold;
+}
+
+.about{
+    width: 100%;
+    height: auto;
+    border: 2px solid gray;
+    display: grid;
+    justify-items: stretch;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 8px;
+    padding: 20px;
+    text-align: center;
+    background: #dce1e3;
+}
+.ab_top{
+    grid-column: 1/-1;
+    color: gray;
+    text-transform: uppercase;
+    text-shadow:  2px 2px 8px #ff0000;
+  
+}
+.myschool,.mygraduation,.mypgraduation{
+    padding: 20px 40px 40px;
+    border: 2px solid gray;
+    height: 20rem;
+    line-height: 2rem;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.mygraduation{
+   background: linear-gradient(45deg,#036eb7,#64eaff);
+
+}
+.myschool{
+    background: linear-gradient(45deg,#e91e63,#ed55ff);
+ 
+ }
+ .mypgraduation{
+    background: linear-gradient(45deg,#f05a4f,#f4c030);
+ 
+ }
+ .title{
+     
+     margin: 0;
+     padding: 0;
+     font-size: 1rem;
+     color: #fff;
+     text-transform: uppercase;
+
+ }
+ .about p ,h3{
+     
+    margin: 0;
+    padding: 0;
+    
+    color: #fff;
+   
+
+}
+.social_img{
+    border: 2px solid black;
+    display: flex;
+    width: auto;
+    max-height: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 74px 0;
+    margin: 0 auto;
+    background-color: black;
+}
+.btn1{
+    padding: 6px;
+    border-radius: 6px ;
+    max-width: 300px;
+    background:linear-gradient(
+57deg
+, #00c6a7, #1e4d92);
+}
+.btn1:hover{
+   background:  linear-gradient(
+57deg
+,  #1e4d92 ,#00c6a7);
+}
+@media ( max-width:1050px) {
+    .left_side{
+       padding:  1rem 1rem ;
+    }
+    .left_side img{
+        width: 20rem;
+}}
+@media screen and (max-width:755px ){
+    header{
+        grid-column:1/-1;
+    }
+
+    main{
+        grid-template-columns:repeat(1,1fr);
+
+    }
+    .right_side{
+        height: auto;
+        grid-row: 3;
+    }
+    .left_side img{
+        width: 100%;
+        height: auto;
+    }
+   
+} 
+@media (max-width:450px){
+    .about{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
